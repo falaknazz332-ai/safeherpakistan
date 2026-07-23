@@ -1,24 +1,72 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Toaster } from "@/components/ui/sonner";
+import { Navbar } from "@/components/safeher/Navbar";
+import { Hero } from "@/components/safeher/Hero";
+import { EmergencyContacts } from "@/components/safeher/EmergencyContacts";
+import { Features } from "@/components/safeher/Features";
+import { AIToolkit } from "@/components/safeher/AIToolkit";
+import { KnowYourRights } from "@/components/safeher/KnowYourRights";
+import { SafetyToolkit } from "@/components/safeher/SafetyToolkit";
+import { SafetyQuiz } from "@/components/safeher/SafetyQuiz";
+import { DailyTip } from "@/components/safeher/DailyTip";
+import { Footer } from "@/components/safeher/Footer";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "SafeHer Pakistan — Empowering Safety, One Click at a Time" },
+      {
+        name: "description",
+        content:
+          "SafeHer Pakistan is a premium women's safety companion — emergency contacts, live location, AI safety toolkit, legal rights and community help, designed for Pakistan.",
+      },
+      {
+        property: "og:title",
+        content: "SafeHer Pakistan — Women's Safety & Rights",
+      },
+      {
+        property: "og:description",
+        content:
+          "Emergency SOS, live location, AI-powered safety tools and Pakistani legal rights — all in one beautifully designed place.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [
+      {
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com",
+      },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Quicksand:wght@500;600;700&display=swap",
+      },
+    ],
+  }),
+  component: Home,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+function Home() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen">
+      <Navbar />
+      <main>
+        <Hero />
+        <DailyTip />
+        <EmergencyContacts />
+        <Features />
+        <AIToolkit />
+        <SafetyToolkit />
+        <KnowYourRights />
+        <SafetyQuiz />
+      </main>
+      <Footer />
+      <Toaster position="top-center" richColors />
     </div>
   );
 }
