@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "SafeHer Pakistan — Empowering Safety, One Click at a Time" },
+      { name: "description", content: "SafeHer Pakistan is a premium women's safety companion — emergency contacts, live location, AI safety toolkit, legal rights and community help, designed for Pakistan." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "SafeHer Pakistan — Empowering Safety, One Click at a Time" },
+      { property: "og:description", content: "SafeHer Pakistan is a premium women's safety companion — emergency contacts, live location, AI safety toolkit, legal rights and community help, designed for Pakistan." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "SafeHer Pakistan — Empowering Safety, One Click at a Time" },
+      { name: "twitter:description", content: "SafeHer Pakistan is a premium women's safety companion — emergency contacts, live location, AI safety toolkit, legal rights and community help, designed for Pakistan." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/669b70cb-16f1-48fe-ab6c-0e1ba131044d/id-preview-4e90554d--d1e02ebf-3833-4dfb-bc8a-67dfc3980e46.lovable.app-1784814923494.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/669b70cb-16f1-48fe-ab6c-0e1ba131044d/id-preview-4e90554d--d1e02ebf-3833-4dfb-bc8a-67dfc3980e46.lovable.app-1784814923494.png" },
     ],
     links: [
       {
