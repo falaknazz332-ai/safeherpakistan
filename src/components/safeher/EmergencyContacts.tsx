@@ -141,7 +141,7 @@ export function EmergencyContacts() {
           <div className="inline-block px-4 py-1.5 rounded-full glass text-sm font-medium text-primary mb-4">
             🚨 Emergency Contacts
           </div>
-          <h2 className="text-4xl md:text-5xl font-black mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4">
             Help is <span className="gradient-text">One Tap Away</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">

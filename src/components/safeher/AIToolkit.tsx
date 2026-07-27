@@ -181,7 +181,7 @@ export function AIToolkit() {
             <Sparkles className="w-4 h-4" />
             AI Toolkit
           </div>
-          <h2 className="text-4xl md:text-5xl font-black mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4">
             Meet Your <span className="gradient-text">AI Safety Companion</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -218,10 +218,10 @@ export function AIToolkit() {
       </div>
 
       <Dialog open={!!active} onOpenChange={(v) => !v && setActive(null)}>
-        <DialogContent className="max-w-2xl glass-strong border-primary/20 rounded-3xl p-0 overflow-hidden">
+        <DialogContent className="max-w-2xl w-[95vw] sm:w-full glass-strong border-primary/20 rounded-3xl p-0 overflow-hidden">
           {active && (
             <>
-              <div className="bg-primary-gradient p-6 text-primary-foreground">
+              <div className="bg-primary-gradient p-5 sm:p-6 text-primary-foreground">
                 <DialogHeader>
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-2xl bg-white/20 grid place-items-center text-2xl backdrop-blur">
@@ -239,7 +239,7 @@ export function AIToolkit() {
                 </DialogHeader>
               </div>
 
-              <div className="p-6 space-y-4 max-h-[70vh] overflow-y-auto">
+              <div className="p-5 sm:p-6 space-y-4 max-h-[70vh] overflow-y-auto">
                 <div>
                   <label className="text-xs uppercase tracking-wider font-semibold text-primary mb-2 block">
                     Your situation

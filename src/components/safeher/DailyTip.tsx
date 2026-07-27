@@ -23,7 +23,7 @@ export function DailyTip() {
 
   return (
     <section className="py-10 px-4">
-      <div className="max-w-4xl mx-auto glass-strong rounded-4xl p-6 md:p-8 flex items-center gap-5 shadow-soft animate-fade-up">
+      <div className="max-w-4xl mx-auto glass-strong rounded-4xl p-5 sm:p-6 md:p-8 flex flex-col sm:flex-row items-center gap-4 sm:gap-5 text-center sm:text-left shadow-soft animate-fade-up">
         <div className="w-14 h-14 shrink-0 rounded-2xl bg-primary-gradient grid place-items-center shadow-glow">
           <Lightbulb className="w-7 h-7 text-primary-foreground" />
         </div>

@@ -3,8 +3,8 @@ import { Heart, Instagram, Twitter, Facebook, Mail } from "lucide-react";
 export function Footer() {
   return (
     <footer className="mt-20 px-4 pb-8">
-      <div className="max-w-7xl mx-auto glass-strong rounded-4xl p-8 md:p-12 shadow-soft">
-        <div className="grid md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto glass-strong rounded-4xl p-6 sm:p-8 md:p-12 shadow-soft">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-2xl bg-primary-gradient grid place-items-center shadow-glow">

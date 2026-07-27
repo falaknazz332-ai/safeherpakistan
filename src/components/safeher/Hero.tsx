@@ -58,13 +58,13 @@ export function Hero() {
             <Sparkles className="w-4 h-4" />
             SafeHer Foundation · A NovaTech Solutions Project
           </div>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] mb-6">
             Empowering{" "}
             <span className="gradient-text">Safety</span>,
             <br />
             One Click at a Time.
           </h1>
-          <p className="text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed">
+          <p className="text-base sm:text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed">
             A premium safety companion for women in Pakistan — emergency contacts,
             live location, AI safety toolkit, legal rights and community help,
             all in one beautifully designed place.
@@ -74,7 +74,7 @@ export function Hero() {
             <Button
               onClick={triggerSOS}
               size="lg"
-              className="rounded-full bg-primary-gradient shadow-glow hover:opacity-90 animate-pulse-glow text-base h-14 px-7"
+              className="w-full sm:w-auto rounded-full bg-primary-gradient shadow-glow hover:opacity-90 animate-pulse-glow text-sm sm:text-base h-12 sm:h-14 px-6 sm:px-7"
             >
               <Siren className="w-5 h-5 mr-2" />
               Emergency SOS
@@ -83,17 +83,17 @@ export function Hero() {
               onClick={shareLocation}
               size="lg"
               variant="outline"
-              className="rounded-full glass border-primary/30 hover:bg-secondary h-14 px-7 text-base"
+              className="w-full sm:w-auto rounded-full glass border-primary/30 hover:bg-secondary h-12 sm:h-14 px-6 sm:px-7 text-sm sm:text-base"
               disabled={locating}
             >
               <MapPin className="w-5 h-5 mr-2" />
               {locating ? "Locating…" : "Share Live Location"}
             </Button>
-            <a href="#ai-toolkit">
+            <a href="#ai-toolkit" className="w-full sm:w-auto">
               <Button
                 size="lg"
                 variant="outline"
-                className="rounded-full glass border-lavender/40 hover:bg-secondary h-14 px-7 text-base"
+                className="w-full rounded-full glass border-lavender/40 hover:bg-secondary h-12 sm:h-14 px-6 sm:px-7 text-sm sm:text-base"
               >
                 <HeartHandshake className="w-5 h-5 mr-2" />
                 Get Help
@@ -101,7 +101,7 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="mt-10 flex flex-wrap items-center gap-6 text-sm text-muted-foreground">
+          <div className="mt-8 sm:mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-primary" />
               24/7 Emergency Access
@@ -120,7 +120,7 @@ export function Hero() {
         <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
           <div className="relative">
             <div className="absolute -inset-4 bg-primary-gradient opacity-30 blur-3xl rounded-full" />
-            <div className="relative glass-strong rounded-4xl p-8 shadow-glow">
+            <div className="relative glass-strong rounded-4xl p-5 sm:p-8 shadow-glow">
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { label: "Emergency Contacts", value: "12+", icon: "📞", color: "primary" },

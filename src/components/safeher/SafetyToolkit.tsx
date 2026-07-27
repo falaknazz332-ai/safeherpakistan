@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { CheckSquare, Trophy, RotateCcw } from "lucide-react";
+import { SquareCheck as CheckSquare, Trophy, RotateCcw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 
@@ -54,7 +54,7 @@ export function SafetyToolkit() {
             <CheckSquare className="w-4 h-4" />
             Safety Toolkit
           </div>
-          <h2 className="text-4xl md:text-5xl font-black mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4">
             Your Personal <span className="gradient-text">Safety Checklist</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">

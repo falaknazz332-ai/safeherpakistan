@@ -148,7 +148,7 @@ export function KnowYourRights() {
             <Scale className="w-4 h-4" />
             Know Your Rights
           </div>
-          <h2 className="text-4xl md:text-5xl font-black mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4">
             Your Rights, <span className="gradient-text">Explained Simply</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">

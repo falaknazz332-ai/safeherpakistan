@@ -1,18 +1,5 @@
 import { useState } from "react";
-import {
-  MapPin,
-  Route,
-  ShieldCheck,
-  FileText,
-  MessageCircle,
-  Award,
-  Search,
-  Scale,
-  Building2,
-  Video,
-  CheckSquare,
-  Lightbulb,
-} from "lucide-react";
+import { MapPin, Route, ShieldCheck, FileText, MessageCircle, Award, Search, Scale, Building2, Video, SquareCheck as CheckSquare, Lightbulb } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -236,7 +223,7 @@ export function Features() {
           <div className="inline-block px-4 py-1.5 rounded-full glass text-sm font-medium text-primary mb-4">
             ✨ Features
           </div>
-          <h2 className="text-4xl md:text-5xl font-black mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-4">
             Everything You Need, <span className="gradient-text">Beautifully Simple</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">

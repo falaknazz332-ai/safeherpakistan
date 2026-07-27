@@ -119,7 +119,7 @@ export function SafetyQuiz() {
             <Award className="w-4 h-4" />
             Safety Quiz
           </div>
-          <h2 className="text-4xl md:text-5xl font-black mb-3">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black mb-3">
             Test Your <span className="gradient-text">Safety Knowledge</span>
           </h2>
           <p className="text-muted-foreground">Earn a cute badge you can share.</p>
