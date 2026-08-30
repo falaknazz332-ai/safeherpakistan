@@ -237,10 +237,9 @@ export function Features() {
             const Icon = f.icon;
             const open = openIdx === i;
             return (
-              <button
+              <div
                 key={f.title}
-                onClick={() => setOpenIdx(open ? null : i)}
-                className={`text-left glass-strong rounded-3xl p-5 sm:p-6 hover-lift transition-all animate-fade-up ${
+                className={`text-start glass-strong rounded-3xl p-5 sm:p-6 hover-lift transition-all animate-fade-up ${
                   open ? "ring-2 ring-primary shadow-glow" : ""
                 }`}
                 style={{ animationDelay: `${i * 0.04}s` }}
