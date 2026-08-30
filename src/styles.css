@@ -238,3 +238,36 @@
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
 }
+
+/* ---------- Responsive + RTL / Urdu support ---------- */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Never let long words/numbers/URLs blow out narrow screens */
+h1, h2, h3, p, li, a, span, button {
+  overflow-wrap: anywhere;
+}
+
+html.lang-ur body {
+  font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Poppins", sans-serif;
+  line-height: 2.1;
+}
+
+html.lang-ur h1,
+html.lang-ur h2,
+html.lang-ur h3 {
+  line-height: 1.9;
+}
+
+html[dir="rtl"] .lucide {
+  transform: scaleX(-1);
+}
+html[dir="rtl"] .lucide-heart,
+html[dir="rtl"] .lucide-sparkles,
+html[dir="rtl"] .lucide-award,
+html[dir="rtl"] .lucide-trophy {
+  transform: none;
+}
