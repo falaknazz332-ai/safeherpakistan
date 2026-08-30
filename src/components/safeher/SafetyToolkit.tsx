@@ -47,7 +47,7 @@ export function SafetyToolkit() {
   const pct = Math.round((done / ITEMS.length) * 100);
 
   return (
-    <section id="toolkit" className="py-20 px-4">
+    <section id="toolkit" className="py-14 sm:py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-10 animate-fade-up">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-sm font-medium text-primary mb-4">

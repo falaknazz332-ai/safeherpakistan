@@ -93,8 +93,8 @@ export function SafetyQuiz() {
   if (done) {
     const badge = badgeFor(score);
     return (
-      <section id="quiz" className="py-20 px-4">
-        <div className="max-w-2xl mx-auto glass-strong rounded-4xl p-10 text-center animate-fade-up shadow-glow">
+      <section id="quiz" className="py-14 sm:py-20 px-4">
+        <div className="max-w-2xl mx-auto glass-strong rounded-4xl p-6 sm:p-10 text-center animate-fade-up shadow-glow">
           <div className="text-7xl mb-4 animate-float">{badge.emoji}</div>
           <div className="inline-block px-4 py-1.5 rounded-full bg-primary-gradient text-primary-foreground text-sm font-semibold mb-4">
             Badge unlocked!
@@ -112,7 +112,7 @@ export function SafetyQuiz() {
   }
 
   return (
-    <section id="quiz" className="py-20 px-4">
+    <section id="quiz" className="py-14 sm:py-20 px-4">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-8 animate-fade-up">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-sm font-medium text-primary mb-4">
@@ -125,7 +125,7 @@ export function SafetyQuiz() {
           <p className="text-muted-foreground">Earn a cute badge you can share.</p>
         </div>
 
-        <div className="glass-strong rounded-4xl p-8 shadow-soft animate-fade-up">
+        <div className="glass-strong rounded-4xl p-5 sm:p-8 shadow-soft animate-fade-up">
           <div className="flex items-center justify-between mb-4 text-xs uppercase tracking-wider text-muted-foreground">
             <span>
               Question {i + 1} / {QUESTIONS.length}

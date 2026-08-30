@@ -10,6 +10,7 @@ import { SafetyToolkit } from "@/components/safeher/SafetyToolkit";
 import { SafetyQuiz } from "@/components/safeher/SafetyQuiz";
 import { DailyTip } from "@/components/safeher/DailyTip";
 import { Footer } from "@/components/safeher/Footer";
+import { LanguageProvider } from "@/lib/i18n";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -44,7 +45,7 @@ export const Route = createFileRoute("/")({
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Quicksand:wght@500;600;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Quicksand:wght@500;600;700&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap",
       },
     ],
   }),
@@ -53,20 +54,22 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <main>
-        <Hero />
-        <DailyTip />
-        <EmergencyContacts />
-        <Features />
-        <AIToolkit />
-        <SafetyToolkit />
-        <KnowYourRights />
-        <SafetyQuiz />
-      </main>
-      <Footer />
-      <Toaster position="top-center" richColors />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen overflow-x-hidden">
+        <Navbar />
+        <main>
+          <Hero />
+          <DailyTip />
+          <EmergencyContacts />
+          <Features />
+          <AIToolkit />
+          <SafetyToolkit />
+          <KnowYourRights />
+          <SafetyQuiz />
+        </main>
+        <Footer />
+        <Toaster position="top-center" richColors />
+      </div>
+    </LanguageProvider>
   );
 }

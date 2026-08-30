@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Heart, Moon, Sun, Menu, X } from "lucide-react";
+import { Heart, Moon, Sun, Menu, X, Languages } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/lib/i18n";
 
 const links = [
   { href: "#home", label: "Home" },
@@ -15,6 +16,7 @@ export function Navbar() {
   const [dark, setDark] = useState(false);
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { lang, toggle: toggleLang } = useLanguage();
 
   useEffect(() => {
     const saved = localStorage.getItem("safeher-theme");
@@ -65,7 +67,19 @@ export function Navbar() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={toggleLang}
+              aria-label="Switch language"
+              className="rounded-full glass border-primary/30 px-2.5 sm:px-3 h-9 text-xs font-semibold"
+            >
+              <Languages className="w-4 h-4 sm:mr-1" />
+              <span className="hidden sm:inline">
+                {lang === "ur" ? "English" : "اردو"}
+              </span>
+            </Button>
             <Button
               size="icon"
               variant="ghost"

@@ -141,7 +141,7 @@ const RIGHTS: Right[] = [
 
 export function KnowYourRights() {
   return (
-    <section id="rights" className="py-20 px-4">
+    <section id="rights" className="py-14 sm:py-20 px-4">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14 animate-fade-up">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-sm font-medium text-primary mb-4">

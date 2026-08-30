@@ -217,7 +217,7 @@ export function Features() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
-    <section id="features" className="py-20 px-4">
+    <section id="features" className="py-14 sm:py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14 animate-fade-up">
           <div className="inline-block px-4 py-1.5 rounded-full glass text-sm font-medium text-primary mb-4">
@@ -237,10 +237,9 @@ export function Features() {
             const Icon = f.icon;
             const open = openIdx === i;
             return (
-              <button
+              <div
                 key={f.title}
-                onClick={() => setOpenIdx(open ? null : i)}
-                className={`text-left glass-strong rounded-3xl p-6 hover-lift transition-all animate-fade-up ${
+                className={`text-start glass-strong rounded-3xl p-5 sm:p-6 hover-lift transition-all animate-fade-up ${
                   open ? "ring-2 ring-primary shadow-glow" : ""
                 }`}
                 style={{ animationDelay: `${i * 0.04}s` }}
