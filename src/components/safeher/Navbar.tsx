@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Heart, Moon, Sun, Menu, X } from "lucide-react";
+import { Heart, Moon, Sun, Menu, X, Languages } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/lib/i18n";
 
 const links = [
   { href: "#home", label: "Home" },
