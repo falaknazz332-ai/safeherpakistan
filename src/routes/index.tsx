@@ -10,6 +10,7 @@ import { SafetyToolkit } from "@/components/safeher/SafetyToolkit";
 import { SafetyQuiz } from "@/components/safeher/SafetyQuiz";
 import { DailyTip } from "@/components/safeher/DailyTip";
 import { Footer } from "@/components/safeher/Footer";
+import { LanguageProvider } from "@/lib/i18n";
 
 export const Route = createFileRoute("/")({
   head: () => ({
