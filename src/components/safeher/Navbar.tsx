@@ -67,7 +67,19 @@ export function Navbar() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+            <Button
+              size="sm"
+              variant="outline"
+              onClick={toggleLang}
+              aria-label="Switch language"
+              className="rounded-full glass border-primary/30 px-2.5 sm:px-3 h-9 text-xs font-semibold"
+            >
+              <Languages className="w-4 h-4 sm:mr-1" />
+              <span className="hidden sm:inline">
+                {lang === "ur" ? "English" : "اردو"}
+              </span>
+            </Button>
             <Button
               size="icon"
               variant="ghost"
