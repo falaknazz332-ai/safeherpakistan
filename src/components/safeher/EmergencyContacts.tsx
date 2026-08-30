@@ -135,7 +135,7 @@ export function EmergencyContacts() {
   };
 
   return (
-    <section id="emergency" className="py-20 px-4 relative">
+    <section id="emergency" className="py-14 sm:py-20 px-4 relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 animate-fade-up">
           <div className="inline-block px-4 py-1.5 rounded-full glass text-sm font-medium text-primary mb-4">
@@ -154,7 +154,7 @@ export function EmergencyContacts() {
           {CONTACTS.map((c, i) => (
             <div
               key={c.name}
-              className="glass-strong rounded-3xl p-6 hover-lift animate-fade-up"
+              className="glass-strong rounded-3xl p-5 sm:p-6 hover-lift animate-fade-up"
               style={{ animationDelay: `${i * 0.05}s` }}
             >
               <div className="flex items-start justify-between mb-4">

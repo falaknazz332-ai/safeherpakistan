@@ -174,7 +174,7 @@ export function AIToolkit() {
   };
 
   return (
-    <section id="ai-toolkit" className="py-20 px-4 relative">
+    <section id="ai-toolkit" className="py-14 sm:py-20 px-4 relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14 animate-fade-up">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-sm font-medium text-primary mb-4">
@@ -197,7 +197,7 @@ export function AIToolkit() {
               <button
                 key={t.id}
                 onClick={() => openTool(t)}
-                className="text-left glass-strong rounded-3xl p-6 hover-lift group animate-fade-up"
+                className="text-left glass-strong rounded-3xl p-5 sm:p-6 hover-lift group animate-fade-up"
                 style={{ animationDelay: `${i * 0.05}s` }}
               >
                 <div className="flex items-center justify-between mb-4">

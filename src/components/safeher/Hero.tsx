@@ -47,7 +47,7 @@ export function Hero() {
   };
 
   return (
-    <section id="home" className="relative pt-32 pb-20 px-4 overflow-hidden">
+    <section id="home" className="relative pt-28 sm:pt-32 pb-14 sm:pb-20 px-4 overflow-hidden">
       <div className="absolute inset-0 bg-hero opacity-70" />
       <div className="absolute top-20 -left-20 w-72 h-72 rounded-full bg-primary/20 blur-3xl animate-float" />
       <div className="absolute bottom-10 -right-20 w-96 h-96 rounded-full bg-lavender/30 blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
