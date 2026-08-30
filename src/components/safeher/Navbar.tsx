@@ -16,6 +16,7 @@ export function Navbar() {
   const [dark, setDark] = useState(false);
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { lang, toggle: toggleLang } = useLanguage();
 
   useEffect(() => {
     const saved = localStorage.getItem("safeher-theme");
