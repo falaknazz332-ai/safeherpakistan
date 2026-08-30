@@ -53,20 +53,22 @@ export const Route = createFileRoute("/")({
 
 function Home() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <main>
-        <Hero />
-        <DailyTip />
-        <EmergencyContacts />
-        <Features />
-        <AIToolkit />
-        <SafetyToolkit />
-        <KnowYourRights />
-        <SafetyQuiz />
-      </main>
-      <Footer />
-      <Toaster position="top-center" richColors />
-    </div>
+    <LanguageProvider>
+      <div className="min-h-screen overflow-x-hidden">
+        <Navbar />
+        <main>
+          <Hero />
+          <DailyTip />
+          <EmergencyContacts />
+          <Features />
+          <AIToolkit />
+          <SafetyToolkit />
+          <KnowYourRights />
+          <SafetyQuiz />
+        </main>
+        <Footer />
+        <Toaster position="top-center" richColors />
+      </div>
+    </LanguageProvider>
   );
 }
