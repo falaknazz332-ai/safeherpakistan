@@ -165,14 +165,14 @@ export function KnowYourRights() {
               className="glass-strong rounded-3xl px-6 border-none animate-fade-up"
               style={{ animationDelay: `${i * 0.05}s` }}
             >
-              <AccordionTrigger className="hover:no-underline py-5">
-                <div className="flex items-start gap-3 text-left">
+              <AccordionTrigger className="hover:no-underline py-5 min-w-0 gap-2">
+                <div className="flex min-w-0 flex-1 items-start gap-3 text-start">
                   <div className="w-10 h-10 rounded-2xl bg-primary-gradient grid place-items-center shrink-0 text-primary-foreground font-bold">
                     {i + 1}
                   </div>
                   <div className="min-w-0">
                     <div className="font-bold text-base">{r.title}</div>
-                    <div className="text-xs text-muted-foreground truncate">{r.law}</div>
+                    <div className="text-xs text-muted-foreground line-clamp-2">{r.law}</div>
                   </div>
                 </div>
               </AccordionTrigger>
