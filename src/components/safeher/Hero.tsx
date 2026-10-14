@@ -52,13 +52,13 @@ export function Hero() {
       <div className="absolute top-20 -left-20 w-72 h-72 rounded-full bg-primary/20 blur-3xl animate-float" />
       <div className="absolute bottom-10 -right-20 w-96 h-96 rounded-full bg-lavender/30 blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
 
-      <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center [&>*]:min-w-0">
+      <div className="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
         <div className="animate-fade-up">
-          <div className="inline-flex max-w-full items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full glass text-xs sm:text-sm font-medium text-primary mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-sm font-medium text-primary mb-6">
             <Sparkles className="w-4 h-4" />
             SafeHer Foundation · A NovaTech Solutions Project
           </div>
-          <h1 className="text-3xl min-[400px]:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] mb-6">
             Empowering{" "}
             <span className="gradient-text">Safety</span>,
             <br />
