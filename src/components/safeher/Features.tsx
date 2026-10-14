@@ -290,7 +290,7 @@ export function Features() {
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
-              </button>
+              </div>
             );
           })}
         </div>
