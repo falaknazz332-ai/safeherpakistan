@@ -178,7 +178,7 @@ export function KnowYourRights() {
               </AccordionTrigger>
               <AccordionContent className="pb-6">
                 <p className="text-sm text-muted-foreground mb-4">{r.summary}</p>
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 [&>*]:min-w-0">
                   <div>
                     <div className="text-xs uppercase tracking-wider font-semibold text-primary mb-2">
                       What to do
@@ -206,7 +206,7 @@ export function KnowYourRights() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-4 grid sm:grid-cols-3 gap-2 text-xs">
+                <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
                   <div className="glass rounded-xl p-3">
                     <div className="font-semibold">Authority</div>
                     <div className="text-muted-foreground">{r.authority}</div>
