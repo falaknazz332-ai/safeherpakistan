@@ -190,7 +190,7 @@ export function AIToolkit() {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 [&>*]:min-w-0">
           {TOOLS.map((t, i) => {
             const Icon = t.icon;
             return (

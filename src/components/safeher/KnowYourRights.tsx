@@ -166,19 +166,19 @@ export function KnowYourRights() {
               style={{ animationDelay: `${i * 0.05}s` }}
             >
               <AccordionTrigger className="hover:no-underline py-5">
-                <div className="flex items-start gap-3 text-left">
+                <div className="flex min-w-0 flex-1 items-start gap-3 text-start">
                   <div className="w-10 h-10 rounded-2xl bg-primary-gradient grid place-items-center shrink-0 text-primary-foreground font-bold">
                     {i + 1}
                   </div>
                   <div className="min-w-0">
                     <div className="font-bold text-base">{r.title}</div>
-                    <div className="text-xs text-muted-foreground truncate">{r.law}</div>
+                    <div className="text-xs text-muted-foreground">{r.law}</div>
                   </div>
                 </div>
               </AccordionTrigger>
               <AccordionContent className="pb-6">
                 <p className="text-sm text-muted-foreground mb-4">{r.summary}</p>
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 [&>*]:min-w-0">
                   <div>
                     <div className="text-xs uppercase tracking-wider font-semibold text-primary mb-2">
                       What to do
@@ -206,7 +206,7 @@ export function KnowYourRights() {
                     </ul>
                   </div>
                 </div>
-                <div className="mt-4 grid sm:grid-cols-3 gap-2 text-xs">
+                <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
                   <div className="glass rounded-xl p-3">
                     <div className="font-semibold">Authority</div>
                     <div className="text-muted-foreground">{r.authority}</div>
