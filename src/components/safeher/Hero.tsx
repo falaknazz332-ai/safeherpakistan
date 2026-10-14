@@ -49,16 +49,16 @@ export function Hero() {
   return (
     <section id="home" className="relative pt-28 sm:pt-32 pb-14 sm:pb-20 px-4 overflow-hidden">
       <div className="absolute inset-0 bg-hero opacity-70" />
-      <div className="absolute top-20 -left-20 w-72 h-72 rounded-full bg-primary/20 blur-3xl animate-float" />
-      <div className="absolute bottom-10 -right-20 w-96 h-96 rounded-full bg-lavender/30 blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
+      <div className="absolute top-20 left-0 w-48 h-48 sm:w-72 sm:h-72 rounded-full bg-primary/20 blur-3xl animate-float" />
+      <div className="absolute bottom-10 right-0 w-64 h-64 sm:w-96 sm:h-96 rounded-full bg-lavender/30 blur-3xl animate-float" style={{ animationDelay: "1.5s" }} />
 
-      <div className="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-        <div className="animate-fade-up">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass text-sm font-medium text-primary mb-6">
-            <Sparkles className="w-4 h-4" />
+      <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+        <div className="animate-fade-up min-w-0">
+          <div className="inline-flex max-w-full items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full glass text-xs sm:text-sm font-medium text-primary mb-6">
+            <Sparkles className="w-4 h-4 shrink-0" />
             SafeHer Foundation · A NovaTech Solutions Project
           </div>
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] mb-6">
+          <h1 className="text-[2.1rem] leading-tight sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] mb-6">
             Empowering{" "}
             <span className="gradient-text">Safety</span>,
             <br />
@@ -117,11 +117,11 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative animate-fade-up" style={{ animationDelay: "0.2s" }}>
+        <div className="relative animate-fade-up min-w-0" style={{ animationDelay: "0.2s" }}>
           <div className="relative">
             <div className="absolute -inset-4 bg-primary-gradient opacity-30 blur-3xl rounded-full" />
             <div className="relative glass-strong rounded-4xl p-5 sm:p-8 shadow-glow">
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
                 {[
                   { label: "Emergency Contacts", value: "12+", icon: "📞", color: "primary" },
                   { label: "AI Tools", value: "8", icon: "🤖", color: "rose" },
@@ -130,7 +130,7 @@ export function Hero() {
                 ].map((s, i) => (
                   <div
                     key={s.label}
-                    className="glass rounded-2xl p-5 hover-lift"
+                    className="glass rounded-2xl p-4 sm:p-5 hover-lift min-w-0"
                     style={{ animationDelay: `${i * 0.1}s` }}
                   >
                     <div className="text-3xl mb-2">{s.icon}</div>
